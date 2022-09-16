@@ -12,4 +12,9 @@ pipeline {
       }
     }
   }
+  post {
+    always {
+      emailext body: 'hello aditi this is just a testing email.', subject: 'Testing jenkins', to: 'aditinaruka302039@gmail.com'
+    }
+  }
 }
